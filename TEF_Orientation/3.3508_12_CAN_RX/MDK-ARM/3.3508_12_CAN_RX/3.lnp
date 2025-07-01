@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"3.3508_12_can_rx\startup_stm32f427xx.o"
+"3.3508_12_can_rx\main.o"
+"3.3508_12_can_rx\gpio.o"
+"3.3508_12_can_rx\can.o"
+"3.3508_12_can_rx\stm32f4xx_it.o"
+"3.3508_12_can_rx\stm32f4xx_hal_msp.o"
+"3.3508_12_can_rx\stm32f4xx_hal_can.o"
+"3.3508_12_can_rx\stm32f4xx_hal_rcc.o"
+"3.3508_12_can_rx\stm32f4xx_hal_rcc_ex.o"
+"3.3508_12_can_rx\stm32f4xx_hal_flash.o"
+"3.3508_12_can_rx\stm32f4xx_hal_flash_ex.o"
+"3.3508_12_can_rx\stm32f4xx_hal_flash_ramfunc.o"
+"3.3508_12_can_rx\stm32f4xx_hal_gpio.o"
+"3.3508_12_can_rx\stm32f4xx_hal_dma_ex.o"
+"3.3508_12_can_rx\stm32f4xx_hal_dma.o"
+"3.3508_12_can_rx\stm32f4xx_hal_pwr.o"
+"3.3508_12_can_rx\stm32f4xx_hal_pwr_ex.o"
+"3.3508_12_can_rx\stm32f4xx_hal_cortex.o"
+"3.3508_12_can_rx\stm32f4xx_hal.o"
+"3.3508_12_can_rx\stm32f4xx_hal_exti.o"
+"3.3508_12_can_rx\system_stm32f4xx.o"
+"3.3508_12_can_rx\can_receive.o"
+--strict --scatter "3.3508_12_CAN_RX\3.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "3.map" -o 3.3508_12_CAN_RX\3.3508_12_CAN_RX

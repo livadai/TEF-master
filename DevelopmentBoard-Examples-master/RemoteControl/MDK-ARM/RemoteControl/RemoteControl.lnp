@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"remotecontrol\startup_stm32f427xx.o"
+"remotecontrol\bsp_uart.o"
+"remotecontrol\main.o"
+"remotecontrol\gpio.o"
+"remotecontrol\dma.o"
+"remotecontrol\usart.o"
+"remotecontrol\stm32f4xx_it.o"
+"remotecontrol\stm32f4xx_hal_msp.o"
+"remotecontrol\stm32f4xx_hal_uart.o"
+"remotecontrol\stm32f4xx_hal_rcc.o"
+"remotecontrol\stm32f4xx_hal_rcc_ex.o"
+"remotecontrol\stm32f4xx_hal_flash.o"
+"remotecontrol\stm32f4xx_hal_flash_ex.o"
+"remotecontrol\stm32f4xx_hal_flash_ramfunc.o"
+"remotecontrol\stm32f4xx_hal_gpio.o"
+"remotecontrol\stm32f4xx_hal_dma_ex.o"
+"remotecontrol\stm32f4xx_hal_dma.o"
+"remotecontrol\stm32f4xx_hal_pwr.o"
+"remotecontrol\stm32f4xx_hal_pwr_ex.o"
+"remotecontrol\stm32f4xx_hal_cortex.o"
+"remotecontrol\stm32f4xx_hal.o"
+"remotecontrol\stm32f4xx_hal_exti.o"
+"remotecontrol\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "RemoteControl\RemoteControl.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RemoteControl.map" -o RemoteControl\RemoteControl.axf

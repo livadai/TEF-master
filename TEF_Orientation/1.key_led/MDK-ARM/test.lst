@@ -1,0 +1,13 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+                       
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
+interwork --depend=key_led\test.d -okey_led\test.o -I.\RTE\_KEY_LED -ID:\Embedd
+ed\keil\pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include --predefine="__UVISION_VERSION 
+SETA 537" --predefine="_RTE_ SETA 1" --predefine="STM32F427xx SETA 1" --predefi
+ne="_RTE_ SETA 1" --list=test.lst test.s
+333 symbols in table

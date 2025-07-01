@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"one_3508\startup_stm32f427xx.o"
+"one_3508\main.o"
+"one_3508\gpio.o"
+"one_3508\can.o"
+"one_3508\stm32f4xx_it.o"
+"one_3508\stm32f4xx_hal_msp.o"
+"one_3508\stm32f4xx_hal_can.o"
+"one_3508\stm32f4xx_hal_rcc.o"
+"one_3508\stm32f4xx_hal_rcc_ex.o"
+"one_3508\stm32f4xx_hal_flash.o"
+"one_3508\stm32f4xx_hal_flash_ex.o"
+"one_3508\stm32f4xx_hal_flash_ramfunc.o"
+"one_3508\stm32f4xx_hal_gpio.o"
+"one_3508\stm32f4xx_hal_dma_ex.o"
+"one_3508\stm32f4xx_hal_dma.o"
+"one_3508\stm32f4xx_hal_pwr.o"
+"one_3508\stm32f4xx_hal_pwr_ex.o"
+"one_3508\stm32f4xx_hal_cortex.o"
+"one_3508\stm32f4xx_hal.o"
+"one_3508\stm32f4xx_hal_exti.o"
+"one_3508\system_stm32f4xx.o"
+--strict --scatter "one_3508\one_3508.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "one_3508.map" -o one_3508\one_3508.axf

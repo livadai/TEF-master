@@ -1,0 +1,13 @@
+engineer_robot\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c
+engineer_robot\heap_4.o: D:\keil\Core\ARM\ARMCC\Bin\..\include\stdlib.h
+engineer_robot\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+engineer_robot\heap_4.o: D:\keil\Core\ARM\ARMCC\Bin\..\include\stddef.h
+engineer_robot\heap_4.o: D:\keil\Core\ARM\ARMCC\Bin\..\include\stdint.h
+engineer_robot\heap_4.o: ../Core/Inc/FreeRTOSConfig.h
+engineer_robot\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+engineer_robot\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+engineer_robot\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+engineer_robot\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+engineer_robot\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+engineer_robot\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+engineer_robot\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h

@@ -1,0 +1,126 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             helloW, CODE, READONLY ; ÉùÃ÷Ò»
+                                                            ¸öÃûÎªhelloWµÄÖ»¶Á´
+                                                            úÂë¶Î
+    2 00000000                 ENTRY                        ; ³ÌÐòÈë¿Úµã
+    3 00000000                 EXPORT           __main      ; KeilÐèÒªµÄÖ÷º¯ÊýÉ
+                                                            ùÃ÷
+    4 00000000         
+    5 00000000 00000000 
+                       SWI_WriteC
+                               EQU              0x0         ; ¶¨Òå×Ö·ûÊä³öÈí¼þÖ
+                                                            Ð¶ÏºÅ
+    6 00000000 00000011 
+                       SWI_Exit
+                               EQU              0x11        ; ¶¨Òå³ÌÐòÍË³öÈí¼þÖ
+                                                            Ð¶ÏºÅ
+    7 00000000         
+    8 00000000         __main
+    9 00000000         START
+   10 00000000         LOOP
+   11 00000000 A103            ADR              r1, TEXT    ; ½«TEXT±êÇ©µÄµØÖ·¼
+                                                            ÓÔØµ½r1
+   12 00000002 F811 0B01       LDRB             r0, [r1], #1 ; ´Ór1Ö¸ÏòµÄµØÖ·¼Ó
+                                                            ÔØÒ»¸ö×Ö½Úµ½r0£¬È»º
+                                                            ór1¼Ó1
+   13 00000006 2800            CMP              r0, #0      ; ±È½Ïr0ºÍ0(null×Ö·
+                                                            û)
+   14 00000008 BF18 DF00       SWINE            SWI_WriteC  ; Èç¹ûr0²»Îª0£¬µ÷ÓÃ
+                                                            SWI_WriteCÊä³ö×Ö·û
+   15 0000000C D1F8            BNE              LOOP        ; Èç¹ûr0²»Îª0£¬¼ÌÐø
+                                                            Ñ­»·
+   16 0000000E DF11            SWI              SWI_Exit    ; µ÷ÓÃSWI_Exit½áÊø³
+                                                            ÌÐò
+   17 00000010         
+   18 00000010         TEXT
+   19 00000010 48 65 6C 
+              6C 6F 20 
+              57 6F 72 
+              6C 64 21 
+              0A 0D 00         DCB              "Hello World!", 0x0A, 0x0D, 0 
+                                                            ; Ê¹ÓÃDCB¶¨Òå×Ö·û´®
+                                                            
+   20 0000001F 00              ALIGN                        ; È·±£µØÖ·¶ÔÆë
+   21 00000020         
+   22 00000020                 END                          ; ³ÌÐò½áÊø
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
+interwork --depend=key_led\sum.d -okey_led\sum.o -I.\RTE\_KEY_LED -ID:\Embedded
+\keil\pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include --predefine="__UVISION_VERSION SE
+TA 537" --predefine="_RTE_ SETA 1" --predefine="STM32F427xx SETA 1" --predefine
+="_RTE_ SETA 1" --list=sum.lst sum.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+LOOP 00000000
+
+Symbol: LOOP
+   Definitions
+      At line 10 in file sum.s
+   Uses
+      At line 15 in file sum.s
+Comment: LOOP used once
+START 00000000
+
+Symbol: START
+   Definitions
+      At line 9 in file sum.s
+   Uses
+      None
+Comment: START unused
+TEXT 00000010
+
+Symbol: TEXT
+   Definitions
+      At line 18 in file sum.s
+   Uses
+      At line 11 in file sum.s
+Comment: TEXT used once
+__main 00000000
+
+Symbol: __main
+   Definitions
+      At line 8 in file sum.s
+   Uses
+      At line 3 in file sum.s
+Comment: __main used once
+helloW 00000000
+
+Symbol: helloW
+   Definitions
+      At line 1 in file sum.s
+   Uses
+      None
+Comment: helloW unused
+5 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Absolute symbols
+
+SWI_Exit 00000011
+
+Symbol: SWI_Exit
+   Definitions
+      At line 6 in file sum.s
+   Uses
+      At line 16 in file sum.s
+Comment: SWI_Exit used once
+SWI_WriteC 00000000
+
+Symbol: SWI_WriteC
+   Definitions
+      At line 5 in file sum.s
+   Uses
+      At line 14 in file sum.s
+Comment: SWI_WriteC used once
+2 symbols
+341 symbols in table
